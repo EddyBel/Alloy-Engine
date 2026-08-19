@@ -1,0 +1,11 @@
+[package]
+name = "Alloy-Engine"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pixels = "0.17.2"
+winit = "0.30.13"
+wgpu = "30.0.0" # O la versión estable disponible
+pollster = "1.0.1" # Para ejecutar funciones async durante la inicialización
+bytemuck = { version = "1.25.2", features = ["derive"] } # Para convertir structs a bytes para la GPU
